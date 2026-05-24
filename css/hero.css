@@ -1,6 +1,17 @@
 .section-hero {
   padding-top: 235px;
   padding-bottom: 180px;
+  background-image:
+    linear-gradient(
+      0deg,
+      rgba(17, 19, 31, 1) 15%,
+      rgba(17, 19, 31, 0.39) 75%,
+      rgba(17, 19, 31, 0) 98%
+    ),
+    url('../images/hero-bg.avif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .container.is-hero {

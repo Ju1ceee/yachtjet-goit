@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 32px;
   left: 50%;
   transform: translateX(-50%);
@@ -47,6 +47,7 @@
 .nav-link:hover,
 .nav-link:focus {
   background-color: #1b414b;
+  transition: background-color 250ms ease-in;
 }
 
 .social-links {
@@ -62,4 +63,8 @@
 .social-link:hover,
 .social-link:focus {
   color: #062730;
+}
+
+.social-icon {
+  fill: currentColor;
 }
