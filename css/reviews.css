@@ -1,3 +1,7 @@
+/* ==========================================================================
+   Reviews Section
+   ========================================================================== */
+
 .section-reviews {
   padding-bottom: 100px;
   text-align: center;
@@ -7,22 +11,21 @@
   width: 854px;
   margin: 0 auto;
   margin-bottom: 25px;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 1;
-  letter-spacing: -0.02em;
 }
 
 .reviews-description {
-  margin: 0 auto;
   width: 571px;
+  margin: 0 auto;
+  margin-bottom: 75px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.28;
   letter-spacing: -0.02em;
   opacity: 0.4;
-  margin-bottom: 75px;
 }
+
+/* Review Cards
+   ========================================================================== */
 
 .reviews-list {
   display: flex;
@@ -32,27 +35,27 @@
 .review-card {
   flex-basis: calc((100% - 52px) / 3);
   padding: 32px 28px;
-  border-radius: 24px;
-  background-color: #fbfbfb;
-  color: #040306;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  border-radius: var(--radius-xl);
 }
 
 .review-avatar {
   width: 56px;
   height: 56px;
-  border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 24px;
+  border-radius: 50%;
 }
 
 .review-author {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.1;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #040306;
-  margin-bottom: 8px;
+  color: var(--color-dark);
 }
 
 .review-text {

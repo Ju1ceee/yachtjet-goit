@@ -1,92 +1,58 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
 .footer {
   width: 1230px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 20px;
-  border-radius: 24px 24px 0 0;
-  background-color: #1b414b;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
+/* Footer Layout
+   ========================================================================== */
+
 .footer-container {
-  width: 1080px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 .footer-top {
-  align-self: stretch;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  align-self: stretch;
+  justify-content: space-between;
   margin-bottom: 96px;
 }
 
-.social-icon.is-footer {
-  fill: currentColor;
-}
-
-.footer-social-link {
-  color: #fbfbfb;
-  transition: color 250ms ease-in-out;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-  color: rgba(251, 251, 251, 0.8);
-}
-
-.footer-socials {
-  display: flex;
-  gap: 8px;
-}
-
-.footer-menu-link {
-  display: block;
-  width: 91px;
-  padding: 15px 0;
-  border-radius: 8px;
-  background-color: rgba(251, 251, 251, 0.3);
-  color: #fbfbfb;
-  text-align: center;
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 1.3;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fbfbfb;
-  transition:
-    background-color 250ms ease-in,
-    color 250ms ease-in;
-}
-
-.footer-menu-link:hover,
-.footer-menu-link:focus {
-  background-color: #fbfbfb;
-  color: #1b414b;
-}
+/* Footer Nav
+   ========================================================================== */
 
 .footer-menu {
   display: flex;
   gap: 4px;
 }
 
-.footer-logo {
-  font-size: 20px;
-  letter-spacing: -0.03em;
-  color: #fbfbfb;
-}
+/* Footer Content
+   ========================================================================== */
 
 .footer-subtitle {
   width: 693px;
+  margin-bottom: 99px;
   font-weight: 400;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.02em;
   text-align: center;
-  margin-bottom: 99px;
 }
+
+/* Footer Bottom
+   ========================================================================== */
 
 .footer-bottom {
   display: flex;
@@ -98,18 +64,6 @@
   font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: rgba(251, 251, 251, 0.4);
-}
-
-.footer-logo {
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: -0.03em;
-  color: #fbfbfb;
-  transition: color 250ms ease-in;
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-  color: rgba(251, 251, 251, 0.8);
+  color: var(--color-light);
+  opacity: 0.4;
 }

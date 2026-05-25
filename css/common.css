@@ -1,7 +1,34 @@
+/* ==========================================================================
+   Custom Properties
+   ========================================================================== */
+
+:root {
+  /* Colors */
+  --color-light: #fbfbfb;
+  --color-bg: #0e1823;
+  --color-primary: #1b414b;
+  --color-primary-dark: #062730;
+  --color-dark: #040306;
+  --color-hero-overlay: #11131f;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 15px;
+  --radius-xl: 24px;
+
+  /* Transition */
+  --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ==========================================================================
+   Base Reset
+   ========================================================================== */
+
 body {
   font-family: 'Inter', sans-serif;
-  color: #fbfbfb;
-  background-color: #0e1823;
+  color: var(--color-light);
+  background-color: var(--color-bg);
 }
 
 a {
@@ -39,12 +66,190 @@ img {
   height: auto;
 }
 
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
 .container {
   width: 1280px;
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
 }
+
+.flex-h {
+  display: flex;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   Section Spacing
+   ========================================================================== */
+
+.section {
+  padding-bottom: 150px;
+}
+
+/* ==========================================================================
+   Typography — Shared
+   ========================================================================== */
+
+.section-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn-primary {
+  padding: 16px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  border-radius: var(--radius-lg);
+  transition:
+    color var(--transition),
+    background-color var(--transition);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: var(--color-primary);
+  background-color: var(--color-light);
+}
+
+.btn-outline {
+  padding: 16px 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+  border-radius: var(--radius-lg);
+  transition:
+    color var(--transition),
+    background-color var(--transition);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  color: var(--color-primary);
+  background-color: var(--color-light);
+}
+
+/* ==========================================================================
+   Navigation Pills
+   ========================================================================== */
+
+.nav-pill {
+  display: block;
+  width: 91px;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-light);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition);
+}
+
+.nav-pill.is-header {
+  padding: 15px 24px;
+  background-color: color-mix(in srgb, var(--color-primary) 50%, transparent);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.nav-pill.is-header:hover,
+.nav-pill.is-header:focus {
+  background-color: var(--color-primary);
+}
+
+.nav-pill.is-footer {
+  background-color: color-mix(in srgb, var(--color-light) 30%, transparent);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
+}
+
+.nav-pill.is-footer:hover,
+.nav-pill.is-footer:focus {
+  color: var(--color-primary);
+  background-color: var(--color-light);
+}
+
+/* ==========================================================================
+   Logo
+   ========================================================================== */
+
+.logo {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  color: var(--color-primary);
+  transition: color var(--transition);
+}
+
+.logo.is-footer {
+  color: var(--color-light);
+}
+
+.logo.is-footer:hover,
+.logo.is-footer:focus {
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   Social Links
+   ========================================================================== */
+
+.social-list {
+  display: flex;
+  gap: 8px;
+}
+
+.social-link {
+  color: var(--color-primary);
+  transition: color var(--transition);
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--color-primary-dark);
+}
+
+.social-link.is-footer {
+  color: var(--color-light);
+}
+
+.social-link.is-footer:hover,
+.social-link.is-footer:focus {
+  color: var(--color-light);
+  opacity: 0.8;
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
 
 .sr-only {
   position: absolute;

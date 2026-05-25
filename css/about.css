@@ -1,12 +1,15 @@
-.section-about {
-  padding-bottom: 150px;
-}
+/* ==========================================================================
+   About Section
+   ========================================================================== */
 
 .about-wrapper {
-  background-color: #fbfbfb;
-  border-radius: 24px;
   overflow: hidden;
+  background-color: var(--color-light);
+  border-radius: var(--radius-xl);
 }
+
+/* About Content
+   ========================================================================== */
 
 .about-content {
   display: flex;
@@ -17,11 +20,7 @@
 
 .about-title {
   max-width: 537px;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #1b414b;
+  color: var(--color-primary);
 }
 
 .about-text-wrapper {
@@ -29,24 +28,25 @@
 }
 
 .about-text {
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 23px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: -0.02em;
-  color: #1b414b;
-  margin-bottom: 20px;
+  color: var(--color-primary);
 }
 
 .about-text.is-small {
-  font-weight: 400;
+  margin-bottom: 0;
   font-size: 13px;
   line-height: 1.15;
-  letter-spacing: -0.02em;
-  color: #040306;
+  color: var(--color-dark);
   opacity: 0.4;
-  margin-bottom: 0;
 }
 
+/* About Image
+   ========================================================================== */
+
 .about-image {
-  border-radius: 24px 24px 0 0;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
